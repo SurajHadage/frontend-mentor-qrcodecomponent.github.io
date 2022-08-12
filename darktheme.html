@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | QR code component</title>
+  <style>
+    header { font-size: 16px; font-family: outfit, serif; text-align: center; margin: 10px;}
+    header a { color: hsl(228, 45%, 44%); }
+    :root {
+      --White: hsl(0, 0%, 100%);
+      --Light-gray: hsl(212, 45%, 89%);
+      --Grayish-blue: hsl(220, 15%, 55%);
+      --Dark-blue: hsl(218, 44%, 22%);
+      --Black: hsl(0, 0%, 0%);
+    }
+    body {
+      background-color: var(--Dark-blue);
+      font-family: 'Outfit', sans-serif;
+    }
+    main {
+      width: 320px;
+      height: 500px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 20px;
+      background-color: var(--Black);
+      /* offset-x | offset-y | blur-radius | spread-radius | color */
+      box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.25),
+                  0px -2px 5px rgba(255, 255, 255, 0.25);
+      text-align: center;
+    }
+    figure{
+      width: 290px;
+      height: 290px;
+      margin: 15px auto;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 1.25em;
+      color: var(--White);
+      margin: 30px 30px 0 30px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 15px;
+      margin: 20px;
+      color: var(--Grayish-blue);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    footer { 
+        letter-spacing: 3px;
+        word-spacing: 4px;
+        text-align: center;
+    }
+    a {
+      text-decoration: none;
+      letter-spacing: 3px;
+      word-spacing: 4px;
+      margin: 4px;
+      color: var(--White);
+    }
+    a:visited {
+      color: var(--Light-gray);
+    }
+    #dark {
+      border: 1px solid var(--White);
+    }
+    @media (max-width: 325px) {
+      main {
+        width: 275px;
+      }
+      figure {
+        width: 245px;
+        height: 245px;
+      }
+    }
+    @media (max-height: 700px) {
+      main {
+        top: 60%;
+      }
+    }
+  </style>
+</head>
+<body>
+    <header class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.frontendmentor.io/profile/SurajHadage">SURAJ HADAGE</a>. 
+        Build with Pure HTML and CSS</p>
+    </header>
+    <main>
+        <figure>
+            <img src="image-qr-code.png" alt="QR Code Component">
+        </figure>
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level!</p>
+    </main>
+    <footer>
+      <span> DESIGNED WITH</span>
+      <span id="flex"><a href="./flex.html">FLEX</a></span> 
+      <span id="grid"><a href="./grid.html">GRID</a></span>
+      <span id="simple"><a href="./index.html">SIMPLE CSS</a></span>
+      <span id="react"><a href="./react.html">REACT</a></span>
+      <span id="dark"><a href="./darktheme.html">Darktheme</a></span>
+      <span id="glass"><a href="./glassmorphism.html">Glassmorphism</a></span>
+      <span id="react"><a href="./neumorphism.html">Neumorphism</a></span>
+  </footer>
+</body>
+</html>
